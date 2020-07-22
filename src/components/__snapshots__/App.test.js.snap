@@ -9,6 +9,7 @@ exports[`renders learn react link 1`] = `
     <styled.div>
       <styled.div>
         <styled.img
+          active={false}
           src="player.png"
         />
       </styled.div>
@@ -61,6 +62,7 @@ exports[`renders learn react link 1`] = `
     <styled.div>
       <styled.div>
         <styled.img
+          active={false}
           src="monster.png"
         />
       </styled.div>

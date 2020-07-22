@@ -29,6 +29,15 @@ export const Container = styled.div`
 export const Avatar = styled.img`
   width: 100%;
   height: auto;
+  transition: all ease 0.3s;
+
+  ${({ active }) => {
+    if (active) {
+      return css`
+        transform: scale(1.1, 1.1);
+      `;
+    }
+  }}
 `;
 
 export const Life = styled.div`

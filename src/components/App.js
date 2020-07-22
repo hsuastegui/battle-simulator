@@ -24,7 +24,7 @@ function App() {
   const [result, setResult] = useState("Click Attack");
   const [active, setActive] = useState(false);
 
-  const handleClick = () => {
+  const handleClick = (e) => {
     const { d, l, r } = rollDices(lifes);
     setDices(d);
     setLifes(l);
@@ -41,7 +41,7 @@ function App() {
       <Container>
         <Section>
           <Column>
-            <Avatar src={player} />
+            <Avatar src={player} active={active} />
           </Column>
           <Column>
             <Life value={lifes[0]} />
@@ -71,7 +71,7 @@ function App() {
         </Section>
         <Section>
           <Column>
-            <Avatar src={monster} />
+            <Avatar src={monster} active={active} />
           </Column>
           <Column>
             <Life value={lifes[1]} />
